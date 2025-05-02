@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   try {
-    const directors = await Director.find().populate('films');
+    const directors = await Director.find().select('-password').populate('films');
     res.json(directors);
   } catch (error) {
     console.error(error);
@@ -15,9 +15,10 @@ router.get('/', async (req, res) => {
   }
 });
 
+
 router.get('/:id', async (req, res) => {
   try {
-    const director = await Director.findById(req.params.id).populate('films');
+    const director = await Director.find().select('-password').populate('films');
     if (!director) {
       return res.status(404).json({ msg: "director not found" });
     }
@@ -27,7 +28,6 @@ router.get('/:id', async (req, res) => {
     res.status(500).json({ msg: "internal server error" });
   }
 });
-
 
 router.put('/:id', isAuth, async (req, res) => {
   try {
