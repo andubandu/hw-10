@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+          
+    <style>
+        .footer {
+          background-color: #000;
+          padding: 2rem 0;
+          text-align: center;
+        }
+      
+        .footer h1 {
+          margin: 0;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      
+        .footer a {
+          color: #fff;
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+          transition: color 0.3s, border-bottom 0.3s;
+        }
+      
+        .footer a:hover {
+          color: #1e90ff; 
+          border-bottom: 2px solid #1e90ff;
+        }
+      </style>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-8 pb-2 border-b">routes available so u dont have to look manually :dd</h1>
+        
+        <div class="space-y-8">
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Directors</h2>
+                <div class="space-y-3">
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">GET</span>
+                        <code class="ml-2">/directors</code>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">GET</span>
+                        <code class="ml-2">/directors/:id</code>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">POST</span>
+                        <code class="ml-2">/directors/new</code>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-yellow-500 text-white px-2 py-1 rounded text-sm">PUT</span>
+                        <code class="ml-2">/directors/:id</code>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-red-500 text-white px-2 py-1 rounded text-sm">DELETE</span>
+                        <code class="ml-2">/directors/:id</code>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-semibold mb-4">Films</h2>
+                <div class="space-y-3">
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">GET</span>
+                        <code class="ml-2">/films</code>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">GET</span>
+                        <code class="ml-2">/films/:id</code>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">POST</span>
+                        <code class="ml-2">/films/new</code>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-yellow-500 text-white px-2 py-1 rounded text-sm">PUT</span>
+                        <code class="ml-2">/films/:id</code>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <span class="bg-red-500 text-white px-2 py-1 rounded text-sm">DELETE</span>
+                        <code class="ml-2">/films/:id</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <h1><a href="https://github.com/andubandu/hw-8">GitHub repo</a></h1>
+      </footer>
+
+      
+</body>
+</html>
